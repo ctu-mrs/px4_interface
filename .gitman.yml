@@ -24,7 +24,7 @@ sources:
         target: ros_packages/mavros
     scripts:
       - git submodule update --init --recursive
-  - repo: https://github.com/ctu-mrs/px4_interface.git
+  - repo: https://github.com/ctu-mrs/mrs_uav_px4_api.git
     name: px4_interface
     rev: master
     type: git
@@ -33,6 +33,6 @@ sources:
       -
     links:
       - source: ''
-        target: ros_packages/px4_interface
+        target: ros_packages/mrs_uav_px4_api
     scripts:
       - git submodule update --init --recursive
