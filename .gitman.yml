@@ -25,7 +25,7 @@ sources:
     scripts:
       - git submodule update --init --recursive
   - repo: https://github.com/ctu-mrs/mrs_uav_px4_api.git
-    name: px4_interface
+    name: mrs_uav_px4_api
     rev: master
     type: git
     params:
