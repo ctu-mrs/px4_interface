@@ -36,3 +36,43 @@ sources:
         target: ros_packages/mrs_uav_px4_api
     scripts:
       - git submodule update --init --recursive
+sources_locked:
+  - repo: https://github.com/mavlink/mavlink-gbp-release
+    name: mavlink-gbp-release
+    rev: 4fcf481e8ed49d52edab11a7086570787a5bab0f
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - source: ''
+        target: lib/mavlink-gbp-release
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/mavlink/mavros.git
+    name: mavros
+    rev: ed762be1ea6f53e4702f49bd4e22644f6347040f
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - source: ''
+        target: ros_packages/mavros
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/ctu-mrs/mrs_uav_px4_api.git
+    name: mrs_uav_px4_api
+    rev: 9d48bfb41a83b69c24293fbe6013cd54d54269a2
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - source: ''
+        target: ros_packages/mrs_uav_px4_api
+    scripts:
+      - git submodule update --init --recursive
+default_group: ''
+groups:
+  -
