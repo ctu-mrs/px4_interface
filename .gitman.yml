@@ -63,7 +63,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/ctu-mrs/mrs_uav_px4_api.git
     name: mrs_uav_px4_api
-    rev: ec97b1ee9a450ba5c7eefeb5213b4c10074cac36
+    rev: 884773f21d18dce5bd36cf5806546aef211af3aa
     type: git
     params:
     sparse_paths:
